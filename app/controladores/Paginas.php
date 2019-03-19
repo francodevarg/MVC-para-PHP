@@ -1,7 +1,10 @@
 <?php
 
-/*Todo controlador debe tener un index.*/ 
+/*Todo controlador debe tener un index().*/
 
+/**
+ * El controlador Paginas hereda de Controlador vista() y modelo().
+*/
 
 class Paginas extends Controlador{
 
@@ -16,6 +19,7 @@ class Paginas extends Controlador{
             'titulo' => 'Bienvenido a fran'
 
         ];
+        //Este metodo me lleva a la ruta y le paso datos
         $this->vista('paginas/inicio', $datos);
     }
 
